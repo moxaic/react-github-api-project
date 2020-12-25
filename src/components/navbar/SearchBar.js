@@ -6,13 +6,17 @@ import axios from "../../services/axios";
 export default function SearchBar({ setSearchResult }) {
   const inputText = useRef();
 
-  const handleTextInput = () => {
+  const handleTextInput = async () => {
     const query = inputText.current.value;
-    if (query) {
-      axios.get(`search/users?q=${query}in:user`).then((res) => {
-        console.log(res);
+    if (query !== "") {
+      try {
+        const res = await axios.get(
+          `search/users?q=${query}in:user&per_page=32`
+        );
         setSearchResult(res.data.items);
-      });
+      } catch (err) {
+        console.log(err);
+      }
     }
   };
   return (

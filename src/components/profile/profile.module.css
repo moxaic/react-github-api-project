@@ -23,6 +23,14 @@
   width: 280px;
 }
 
+.userDetails > * {
+  margin: 10px 0;
+}
+
+.login {
+  color: rgb(73, 73, 73);
+}
+
 .interactions {
   display: flex;
 }
@@ -50,6 +58,7 @@
   background-color: #fff;
   border: 1px solid #e2e2e2;
   box-shadow: 0 0 4px rgba(240, 240, 240, 0.9);
+  height: 120px;
   margin: 20px 0;
   padding: 10px 20px;
 }

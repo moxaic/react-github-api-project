@@ -33,7 +33,7 @@ export default function Profile({ match }) {
         />
         <div className={styles.userDetails}>
           {userData.name && <h2>{userData.name}</h2>}
-          <h4>{userData.login}</h4>
+          <h4 className={styles.login}>{userData.login}</h4>
           <div className={styles.interactions}>
             <p>Followers: {userData.followers}</p>
             <p>Following: {userData.following}</p>
@@ -44,7 +44,7 @@ export default function Profile({ match }) {
         </div>
       </div>
       <div className={styles.repos}>
-        {userRepos ? (
+        {userRepos.length ? (
           userRepos.map((repo) => (
             <div key={repo.id} className={styles.repo}>
               <h3>{repo.name}</h3>

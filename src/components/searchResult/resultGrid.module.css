@@ -1,5 +1,5 @@
 .container {
-  background-color: #f8f8ff;
+  background-color: #f2f2ff;
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -19,6 +19,8 @@
   color: #000;
   display: flex;
   height: 100px;
+  position: relative;
+  z-index: 1;
 }
 
 .avatar {
@@ -26,4 +28,19 @@
   height: 60px;
   margin: 20px;
   width: 60px;
+}
+
+.delete {
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  z-index: 2;
 }
