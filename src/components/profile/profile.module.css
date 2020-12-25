@@ -1,0 +1,64 @@
+.container {
+  background-color: #f8f8ff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.profileInfo {
+  flex: 3;
+  padding: 20px;
+}
+
+.avatar {
+  border-radius: 50%;
+  display: block;
+  height: 280px;
+  margin: auto;
+  width: 280px;
+}
+
+.userDetails {
+  margin: auto;
+  width: 280px;
+}
+
+.interactions {
+  display: flex;
+}
+
+.interactions > p:first-child {
+  margin-right: 10px;
+}
+
+.btn {
+  background-color: rgb(20, 151, 20);
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.repos {
+  flex: 6;
+}
+
+.repo {
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 0 4px rgba(240, 240, 240, 0.9);
+  margin: 20px 0;
+  padding: 10px 20px;
+}
+
+.lang {
+  background-color: aquamarine;
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+}
